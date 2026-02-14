@@ -1,0 +1,288 @@
+{
+  "version": "1.0",
+  "name": "default-professional-bank",
+  "source": "curated:internal",
+  "created_at": "2026-02-13T00:00:00Z",
+  "cases": [
+    {
+      "id": "med_001",
+      "domain": "medicine",
+      "difficulty": "medium",
+      "question": "ABG values: pH 7.30, PaCO2 30 mmHg, HCO3- 15 mEq/L. What is the primary acid-base disorder? Return one phrase.",
+      "expected": "metabolic acidosis"
+    },
+    {
+      "id": "med_002",
+      "domain": "medicine",
+      "difficulty": "medium",
+      "question": "Compute anion gap: Na=140, Cl=104, HCO3=18. Return integer only.",
+      "expected": "18"
+    },
+    {
+      "id": "med_003",
+      "domain": "medicine",
+      "difficulty": "easy",
+      "question": "Medication dose is 5 mg/kg for a 72 kg patient. Return total mg only.",
+      "expected": "360"
+    },
+    {
+      "id": "med_004",
+      "domain": "medicine",
+      "difficulty": "easy",
+      "question": "Compute MAP using (SBP + 2*DBP)/3 for BP 120/75. Return integer only.",
+      "expected": "90"
+    },
+    {
+      "id": "med_005",
+      "domain": "medicine",
+      "difficulty": "medium",
+      "question": "qSOFA criteria present: RR=24, SBP=95, altered mentation=yes. How many qSOFA points? Return integer only.",
+      "expected": "3"
+    },
+    {
+      "id": "law_001",
+      "domain": "law",
+      "difficulty": "easy",
+      "question": "Contract clause: penalty applies starting day 11 after due date. Invoice due 2026-03-01 and paid 2026-03-10. Does penalty apply? Return yes or no.",
+      "expected": "no"
+    },
+    {
+      "id": "law_002",
+      "domain": "law",
+      "difficulty": "medium",
+      "question": "Non-compete lasts 12 months after termination. Termination date is 2025-04-15. Return end date as YYYY-MM-DD.",
+      "expected": "2026-04-15"
+    },
+    {
+      "id": "law_003",
+      "domain": "law",
+      "difficulty": "medium",
+      "question": "Breach notice must be filed within 72 hours of discovery. Discovery date is 2026-01-03 09:30. Return deadline DATE only (YYYY-MM-DD).",
+      "expected": "2026-01-06"
+    },
+    {
+      "id": "law_004",
+      "domain": "law",
+      "difficulty": "medium",
+      "question": "A renewal occurs on 2026-08-31 and notice must be given at least 30 days earlier. Return latest valid notice date (YYYY-MM-DD).",
+      "expected": "2026-08-01"
+    },
+    {
+      "id": "law_005",
+      "domain": "law",
+      "difficulty": "medium",
+      "question": "SLA credits are 4%, 7%, and 6% of a $48,000 monthly fee, but capped at 15%. Return payable credit amount in dollars as integer.",
+      "expected": "7200"
+    },
+    {
+      "id": "fin_001",
+      "domain": "finance",
+      "difficulty": "medium",
+      "question": "Revenue is 1,200,000 and COGS is 780,000. Return gross margin percentage as integer (no % sign).",
+      "expected": "35"
+    },
+    {
+      "id": "fin_002",
+      "domain": "finance",
+      "difficulty": "easy",
+      "question": "Current assets are 540,000 and current liabilities are 270,000. Return current ratio as integer.",
+      "expected": "2"
+    },
+    {
+      "id": "fin_003",
+      "domain": "finance",
+      "difficulty": "medium",
+      "question": "Simple interest on principal 800,000 at 6% annual rate for 9 months. Return interest amount as integer.",
+      "expected": "36000"
+    },
+    {
+      "id": "fin_004",
+      "domain": "finance",
+      "difficulty": "easy",
+      "question": "Initial investment is 250,000 and annual net cash flow is 50,000. Return payback period in years as integer.",
+      "expected": "5"
+    },
+    {
+      "id": "fin_005",
+      "domain": "finance",
+      "difficulty": "easy",
+      "question": "Debt is 420,000 and equity is 210,000. Return debt-to-equity ratio as integer.",
+      "expected": "2"
+    },
+    {
+      "id": "sec_001",
+      "domain": "cybersecurity",
+      "difficulty": "easy",
+      "question": "Containment SLA is 15 minutes per host. IOC is confirmed on 3 hosts. One responder handles hosts sequentially. Return total minutes as integer.",
+      "expected": "45"
+    },
+    {
+      "id": "sec_002",
+      "domain": "cybersecurity",
+      "difficulty": "easy",
+      "question": "Password policy minimum length is 12. Candidate password length is 9. Is it compliant? Return yes or no.",
+      "expected": "no"
+    },
+    {
+      "id": "sec_003",
+      "domain": "cybersecurity",
+      "difficulty": "medium",
+      "question": "Required log retention is 180 days. Current retention is 26 weeks. Is this compliant? Return yes or no.",
+      "expected": "yes"
+    },
+    {
+      "id": "sec_004",
+      "domain": "cybersecurity",
+      "difficulty": "easy",
+      "question": "SOC system processes 12,500 events with false-positive rate 2%. Return expected false positives as integer.",
+      "expected": "250"
+    },
+    {
+      "id": "sec_005",
+      "domain": "cybersecurity",
+      "difficulty": "medium",
+      "question": "Critical vulnerability patch SLA is 48 hours. Vulnerability was confirmed at 2026-02-10 14:00. Return deadline DATE only (YYYY-MM-DD).",
+      "expected": "2026-02-12"
+    },
+    {
+      "id": "arch_001",
+      "domain": "software_architecture",
+      "difficulty": "easy",
+      "question": "p99 latency budget is 300 ms. Network consumes 80 ms and DB consumes 140 ms. Return remaining app budget in ms as integer.",
+      "expected": "80"
+    },
+    {
+      "id": "arch_002",
+      "domain": "software_architecture",
+      "difficulty": "medium",
+      "question": "Target throughput is 20,000 requests/minute. One pod handles 250 requests/minute. Return required pod count as integer.",
+      "expected": "80"
+    },
+    {
+      "id": "arch_003",
+      "domain": "software_architecture",
+      "difficulty": "medium",
+      "question": "API version deprecation window is 18 months starting 2025-07-01. Return planned removal date as YYYY-MM-DD.",
+      "expected": "2027-01-01"
+    },
+    {
+      "id": "arch_004",
+      "domain": "software_architecture",
+      "difficulty": "medium",
+      "question": "Circuit breaker opens after 5 consecutive failures. Event sequence is F,F,S,F,F,F,F,F. At which event index (1-based) does it open? Return integer.",
+      "expected": "8"
+    },
+    {
+      "id": "arch_005",
+      "domain": "software_architecture",
+      "difficulty": "medium",
+      "question": "There are 5 services, each with 3 replicas, each replica requests 512 Mi memory. Return total memory in Mi as integer.",
+      "expected": "7680"
+    },
+    {
+      "id": "data_001",
+      "domain": "data_engineering",
+      "difficulty": "easy",
+      "question": "Kafka topic has 24 partitions and consumer group has 10 consumers. Return maximum active consumers as integer.",
+      "expected": "10"
+    },
+    {
+      "id": "data_002",
+      "domain": "data_engineering",
+      "difficulty": "easy",
+      "question": "Dataset size is 2000 GB and compression ratio is 4:1. Return compressed size in GB as integer.",
+      "expected": "500"
+    },
+    {
+      "id": "data_003",
+      "domain": "data_engineering",
+      "difficulty": "medium",
+      "question": "Pipeline ingests 8,500,000 records/day and dedupe removes 12%. Return remaining records as integer.",
+      "expected": "7480000"
+    },
+    {
+      "id": "data_004",
+      "domain": "data_engineering",
+      "difficulty": "easy",
+      "question": "A DAG runs daily at 02:00 UTC. Team timezone is UTC+8. Return local run hour (0-23) as integer.",
+      "expected": "10"
+    },
+    {
+      "id": "data_005",
+      "domain": "data_engineering",
+      "difficulty": "medium",
+      "question": "Classification metrics: TP=80, FP=20, FN=20. Return F1 score as percentage integer (no % sign).",
+      "expected": "80"
+    },
+    {
+      "id": "cloud_001",
+      "domain": "cloud_sre",
+      "difficulty": "easy",
+      "question": "RTO is 30 minutes. Incident outage lasted 47 minutes. Is RTO met? Return yes or no.",
+      "expected": "no"
+    },
+    {
+      "id": "cloud_002",
+      "domain": "cloud_sre",
+      "difficulty": "medium",
+      "question": "Monthly SLO is 99.9% and month length is 43,200 minutes. Return downtime budget in seconds as integer.",
+      "expected": "2592"
+    },
+    {
+      "id": "cloud_003",
+      "domain": "cloud_sre",
+      "difficulty": "easy",
+      "question": "Autoscaling increased instances from 6 to 15. Return percentage increase as integer (no % sign).",
+      "expected": "150"
+    },
+    {
+      "id": "cloud_004",
+      "domain": "cloud_sre",
+      "difficulty": "easy",
+      "question": "Egress is 14,000 GB at $0.09 per GB. Return monthly egress cost in dollars as integer.",
+      "expected": "1260"
+    },
+    {
+      "id": "cloud_005",
+      "domain": "cloud_sre",
+      "difficulty": "medium",
+      "question": "Annual availability target is 99.9%. Return annual downtime budget in seconds as integer.",
+      "expected": "31536"
+    },
+    {
+      "id": "ops_001",
+      "domain": "operations",
+      "difficulty": "medium",
+      "question": "Reorder point = daily demand * lead time + safety stock. Demand=120/day, lead time=7 days, safety stock=300. Return reorder point as integer.",
+      "expected": "1140"
+    },
+    {
+      "id": "ops_002",
+      "domain": "operations",
+      "difficulty": "easy",
+      "question": "OTIF deliveries were 860 out of 1000 shipments. Return OTIF percentage as integer (no % sign).",
+      "expected": "86"
+    },
+    {
+      "id": "ops_003",
+      "domain": "operations",
+      "difficulty": "easy",
+      "question": "Little's Law form: cycle time = WIP / throughput. WIP=450 units, throughput=90 units/day. Return cycle time in days as integer.",
+      "expected": "5"
+    },
+    {
+      "id": "ops_004",
+      "domain": "operations",
+      "difficulty": "medium",
+      "question": "Defects are 38 in 2,000,000 units. Return defect rate in PPM as integer.",
+      "expected": "19"
+    },
+    {
+      "id": "ops_005",
+      "domain": "operations",
+      "difficulty": "easy",
+      "question": "A 5-day disruption plan requires daily demand 80 units to be buffered fully. Return required safety stock units as integer.",
+      "expected": "400"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .body { fill: #1a1a1a; }
+    .big  { fill: #ff4757; }
+    .cut  { fill: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      .body { fill: #ffffff; }
+      .big  { fill: #00d9ff; }
+      .cut  { fill: #0a0e14; }
+    }
+  </style>
+  <path class="body" d="M32 12 L18 45 L50 88 L82 45 L68 12 L58 45 L42 45 Z"/>
+  <path class="big"  d="M26 48 L74 48 L50 56 Z"/>
+  <path class="cut"  d="M38 58 L44 58 L41 68 Z"/>
+  <path class="cut"  d="M56 58 L62 58 L59 68 Z"/>
+  <path class="cut"  d="M46 58 L54 58 L50 82 Z"/>
+</svg>

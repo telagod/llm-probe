@@ -1,0 +1,43 @@
+listen_addr: ":8080"
+
+database:
+  dsn: "postgres://probe:probe@localhost:5432/probe?sslmode=disable"
+  max_conns: 10
+  migrations_path: "./migrations"
+
+auth:
+  session_ttl: "8h"
+  cookie_name: "probe_session"
+
+security:
+  admin_token: ""
+
+keys:
+  test_key_pool:
+    - label: "budget-key-a"
+      api_key: "sk-ant-xxxx"
+      daily_limit_usd: 100
+      rpm: 30
+      tpm: 300000
+      input_cost_per_1k: 0.003
+      output_cost_per_1k: 0.015
+    - label: "budget-key-b"
+      api_key: "sk-ant-yyyy"
+      daily_limit_usd: 50
+      rpm: 20
+      tpm: 180000
+      input_cost_per_1k: 0.003
+      output_cost_per_1k: 0.015
+
+budget:
+  default_run_max_usd: 5
+  default_timeout_sec: 540
+  max_parallel_runs: 2
+
+limits:
+  quick_test_rpm: 6
+
+observability:
+  otlp_endpoint: "localhost:4317"
+  service_name: "probe-api"
+  sample_ratio: 1

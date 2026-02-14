@@ -1,0 +1,21 @@
+# Claude Endpoint Probe
+
+> 免费在线检测 Anthropic Claude API 端点真伪的开源工具。
+
+## 功能
+- API 端点真伪检测：验证是否为官方 Anthropic Claude 模型
+- 协议合规性验证：检查 Messages API 参数、缓存、工具调用
+- Prompt Injection 抗性测试：检测直接/间接注入与 allowlist 逃逸
+- 多维信任评分：加权维度评分 + Hard-Gate 安全门控
+- 免登录使用：无需注册即可运行预定义测试场景
+- 注册用户：可查看历史测试记录
+
+## 测试场景
+1. 官方模型真伪快检 — 聚焦协议一致性、注入泄漏、隐藏工具信号
+2. 注入抗性快检 — 验证 direct/indirect prompt injection 与 allowlist 逃逸
+3. 缓存+工具链烟雾测试 — 覆盖 cache_control / tool_use / tool_choice 基础链路
+
+## 技术栈
+- 后端：Go 1.24 + PostgreSQL
+- 前端：React + TypeScript + Vite
+- 开源项目
